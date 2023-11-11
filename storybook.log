@@ -1,0 +1,11 @@
+npm ERR! code EEXIST
+npm ERR! syscall rename
+npm ERR! path /Users/haipengfeng/.npm/_cacache/tmp/404b54c7
+npm ERR! dest /Users/haipengfeng/.npm/_cacache/content-v2/sha512/b5/66/000859e5ffe12ee3ef7e094b21333b879263c8af4f908a55e1472d34f01f5c24b78696d582b8e00c98a2c4f53ec8783649dc850568afc445f616a5c511ff
+npm ERR! errno EEXIST
+npm ERR! Invalid response body while trying to fetch https://registry.npmjs.org/@base2%2fpretty-print-object: EACCES: permission denied, rename '/Users/haipengfeng/.npm/_cacache/tmp/404b54c7' -> '/Users/haipengfeng/.npm/_cacache/content-v2/sha512/b5/66/000859e5ffe12ee3ef7e094b21333b879263c8af4f908a55e1472d34f01f5c24b78696d582b8e00c98a2c4f53ec8783649dc850568afc445f616a5c511ff'
+npm ERR! File exists: /Users/haipengfeng/.npm/_cacache/content-v2/sha512/b5/66/000859e5ffe12ee3ef7e094b21333b879263c8af4f908a55e1472d34f01f5c24b78696d582b8e00c98a2c4f53ec8783649dc850568afc445f616a5c511ff
+npm ERR! Remove the existing file and try again, or run npm
+npm ERR! with --force to overwrite files recklessly.
+
+npm ERR! A complete log of this run can be found in: /Users/haipengfeng/.npm/_logs/2023-11-11T09_52_50_218Z-debug-0.log

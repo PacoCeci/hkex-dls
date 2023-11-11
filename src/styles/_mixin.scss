@@ -1,0 +1,14 @@
+@mixin button-size(
+  $height,
+  $min-width,
+  $padding-y,
+  $padding-x,
+  $font-size: 16px,
+  $line-height: 24px
+) {
+  height: $height;
+  min-width: $min-width;
+  padding: $padding-y $padding-x;
+  font-size: $font-size;
+  line-height: $line-height;
+}

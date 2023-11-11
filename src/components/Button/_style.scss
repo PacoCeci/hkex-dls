@@ -1,0 +1,162 @@
+.hecl-btn {
+  border-radius: 8px;
+  border: none;
+  letter-spacing: 0.1px;
+  font-size: $font-size-base;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+  &.disabled,
+  &[disabled] {
+    cursor: not-allowed;
+    box-shadow: none;
+    > * {
+      pointer-events: none;
+    }
+  }
+}
+
+// button type
+.hecl-btn-primary {
+  background-color: $primary-blue;
+  color: $mono-ffffff;
+  &:hover {
+    background-color: $primary-blue-120;
+  }
+  &:active {
+    background-color: $primary-blue-140;
+  }
+  &.disabled,
+  &[disabled] {
+    background-color: $mono-d6d8da;
+  }
+}
+
+.hecl-btn-default {
+  border: 1px solid $primary-blue;
+  background-color: $mono-ffffff;
+  color: $primary-blue;
+  &:hover {
+    background-color: $mono-eeeff0;
+    border-color: $primary-blue-120;
+  }
+  &:active {
+    background-color: $mono-d6d8da;
+    border-color: $primary-blue-140;
+  }
+  &.disabled,
+  &[disabled] {
+    background-color: $mono-ffffff;
+    color: $mono-d6d8da;
+    border-color: $mono-d6d8da;
+  }
+}
+
+.hecl-btn-link {
+  background-color: $mono-ffffff;
+  color: $primary-blue;
+  padding-bottom: 10px;
+  &:hover {
+    color: $primary-blue-120;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+  &:active {
+    color: $primary-blue-140;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+  &.disabled,
+  &[disabled] {
+    color: $mono-d6d8da;
+    text-decoration: none;
+  }
+}
+
+// button size
+.hecl-btn-sm {
+  @include button-size(
+    $height: 32px,
+    $min-width: 64px,
+    $padding-y: 6px,
+    $padding-x: 10px,
+    $font-size: 14px,
+    $line-height: 20px
+  );
+}
+
+.hecl-btn-md {
+  @include button-size(
+    $height: 36px,
+    $min-width: 80px,
+    $padding-y: 6px,
+    $padding-x: 12px
+  );
+}
+
+.hecl-btn-lg {
+  @include button-size(
+    $height: 48px,
+    $min-width: 96px,
+    $padding-y: 12px,
+    $padding-x: 16px
+  );
+}
+
+// button shape for icon button
+.hecl-btn-icon {
+  &.hecl-btn-sm {
+    min-width: 32px;
+    max-width: 32px;
+    min-height: 32px;
+    max-height: 32px;
+    padding: 8px;
+    font-size: 16px;
+  }
+
+  &.hecl-btn-md {
+    min-width: 36px;
+    max-width: 36px;
+    min-height: 36px;
+    max-height: 36px;
+    padding: 8px;
+    font-size: 20px;
+  }
+
+  &.hecl-btn-lg {
+    min-width: 48px;
+    max-width: 48px;
+    min-height: 48px;
+    max-height: 48px;
+    padding: 14px;
+    font-size: 20px;
+  }
+
+  &.hecl-btn-link {
+    padding: 0px;
+    &.hecl-btn-sm {
+      min-width: 16px;
+      max-width: 16px;
+      min-height: 16px;
+      max-height: 16px;
+    }
+
+    &.hecl-btn-md,
+    &.hecl-btn-lg {
+      min-width: 20px;
+      max-width: 20px;
+      min-height: 20px;
+      max-height: 20px;
+    }
+  }
+}
+
+.hecl-btn-circle {
+  border-radius: 50%;
+}
+
+.hecl-btn + .hecl-btn {
+  margin-left: 16px;
+}

@@ -1,0 +1,19 @@
+.hecl-alert {
+  display: flex;
+  padding: 12px 16px;
+  align-items: center;
+  gap: 12px;
+  border-bottom: 1px solid $mono-d6d8da;
+}
+
+.hecl-alert-symbol {
+  flex-shrink: 0;
+}
+
+.hecl-alert-content {
+  flex-grow: 1;
+}
+
+.hecl-alert-action {
+  flex-shrink: 0;
+}

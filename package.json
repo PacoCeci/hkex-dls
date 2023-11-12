@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "svgr": "rimraf src/components/Icon/arrows && rimraf src/components/Icon/navigation && rimraf src/components/Icon/social && rimraf src/components/Icon/utilities && svgr -d src/components/Icon/ src/assets/icons --icon --typescript --svg-props 'width={size},height={size},fill={color}' --replace-attr-values '#333D47=currentColor' --template svgrTemplate.js"
   },
   "author": "",
   "license": "ISC",
@@ -19,6 +20,7 @@
     "@storybook/react": "^7.5.3",
     "@storybook/react-vite": "^7.5.3",
     "@storybook/testing-library": "^0.2.2",
+    "@svgr/cli": "^8.1.0",
     "@testing-library/jest-dom": "^6.1.4",
     "@testing-library/react": "^14.1.0",
     "@testing-library/user-event": "^14.5.1",
@@ -27,6 +29,7 @@
     "@types/react-dom": "^18.2.15",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "rimraf": "^5.0.5",
     "sass": "^1.69.5",
     "storybook": "^7.5.3",
     "typescript": "^5.2.2",

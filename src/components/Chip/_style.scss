@@ -1,0 +1,37 @@
+.hecl-chip {
+  color: $primary-blue;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  min-height: 32px;
+  max-height: 32px;
+  border-radius: 16px;
+  border: 1px solid $primary-blue;
+  font-size: 14px;
+  padding: 6px 10px;
+
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.1px;
+
+  &.disabled,
+  &[disabled] {
+    cursor: not-allowed;
+    color: $mono-d6d8da;
+    border-color: $mono-d6d8da;
+    > * {
+      pointer-events: none;
+    }
+  }
+}
+
+.hecl-chip-error {
+  color: $primary-red-110;
+  border-color: $primary-red-110;
+}
+
+.hecl-chip + .hecl-chip {
+  margin-left: 12px;
+}

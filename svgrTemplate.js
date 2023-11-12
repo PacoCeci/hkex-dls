@@ -6,7 +6,7 @@ const propTypesTemplate = ({ componentName, jsx, exports }, { tpl }) => {
 
   function ${componentName}(props: ISvgProps) {
     const { size, color } = props;
-    return ${jsx};
+    return <span className="hecl-icon">{${jsx}}</span>
   }
   
   ${componentName}.propTypes = propTypes;
